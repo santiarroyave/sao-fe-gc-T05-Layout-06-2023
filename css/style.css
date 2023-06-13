@@ -59,9 +59,26 @@ a{
 a:last-child{
     margin-bottom: 0;
 }
-a:hover {
+a:hover{
     box-shadow: 0.2em 0.2em 0.2em #aaa;
     background-color: #3E93AB;
+}
+
+.ejemplo{
+    background-color: #E17201;
+}
+.ejemplo:hover{
+    background-color: #FE952A;
+}
+.netflix:hover{
+    background-color: #000;
+    color: #E50914;
+    background-image: url(../images/Netflix_2015_logo2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+
 }
 
 /* 480 768 1024 */
