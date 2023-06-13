@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+
+    background-color: #141414;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    /* background-color: #f00; */
+    width: 98vw;
+    padding-left: 2vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    /* padding-top: 2em; */
+}
+
+/* Barra de navegación superior */
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+#menu .seleccionado{
+    color: #fff;
+    font-weight: bold;
+}
+#menu a{
+    color: #cfd0d9;
+}
+#menu a:hover{
+    color: #fff;
+}
+#menu > div{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: middle;
+}
+
+#logo{
+    max-width: 150px;
+    margin-right: 5em;
+}   
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li{
+    /* border: 1px solid blue; */
+    margin: 0 2em 0 0;
+}
+#menu ul li a{
+    text-decoration: none;
+    /* border: 1px solid red; */
+    width: 100%;
+
+    display: flex;
+}
+
+/* .enlacesUsuario{
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+} */
+
+.fotoPerfil{
+    background-image: url(../images/foto-perfil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+/* Cuerpo de la web */
+.titulo{
+    color:#fff;
+
+    display: flex;
+    align-items: end;
+    
+}
+
+.titulo h2{
+    margin: 0;
+}
+
+.video{
+    display: flex;
+    padding: 1em 0;
+}
+
+.video > div{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-right: .4em;
+    border-radius: 10px;
+    
+    display: flex;
+    overflow: hidden;
+
+    box-shadow: 3px 3px 3px rgba(0,0,0,20%);
+}
+.video div:hover{
+    filter: brightness(70%);
+    box-shadow: 5px 5px 5px rgba(0,0,0,20%);
+    /* border: 1px solid yellow; */
+}
+
+.video a{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Portadas videos */
+.video1{
+    background-image: url(../images/bala-perdida-2.jpg);
+    
+}
+.video2{
+    background-image: url(../images/el-angel-de-la-muerte.jpg);
+}
+.video3{
+    background-image: url(../images/el-dragon-de-papa.jpg);
+}
+.video4{
+    background-image: url(../images/el-pais-de-los-suenos.jpg);
+}
+.video5{
+    background-image: url(../images/el-prodigio.jpg);
+}
+.video6{
+    background-image: url(../images/enola-holmes-2.jpg);
+}
+.video7{
+    background-image: url(../images/la-escuela-del-bien-y-del-mal.jpg);
+}
+.video8{
+    background-image: url(../images/lqepme.webp);
+}
+.video9{
+    background-image: url(../images/navidad-de-golpe.jpg);
+}
+.video10{
+    background-image: url(../images/pinocho.jpg);
+}
+.video11{
+    background-image: url(../images/ruido.jpg);
+}
+.video12{
+    background-image: url(../images/scrooge.jpg);
+}
+.video13{
+    background-image: url(../images/sin-novedad-en-el-frente.jpg);
+}
+.video14{
+    background-image: url(../images/wendell-and-wild.jpg);
+}
+.video15{
+    background-image: url(../images/furioza.jpg);
+}
