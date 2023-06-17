@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    /* height: 100%; */
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* ESTRUCTURA */
+.head{
+    border: 1px solid blue;
+    background-color: blue;
+    grid-row: 1/2;
+}
+.cuerpo{
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    grid-row: 2/9;
+}
+.slider{
+    border: 1px solid blue;
+    grid-row: 9/12;
+}
+.footer{
+    border: 1px solid blueviolet;
+    background-color: green;
+    grid-row: 12/13;
+}
+
+/* HEAD */
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.navEmpresa{
+    border: 1px solid yellow;   
+    width: 40%; 
+    background-color: yellow;
+}
+.head ul{
+    display: flex;
+}
+.head ul a{
+    color: white;
+    border: 1px solid white;
+    padd
+
+}
+
+.navUsuario{
+    width: 40%;
+    border: 1px solid yellow;
+}
