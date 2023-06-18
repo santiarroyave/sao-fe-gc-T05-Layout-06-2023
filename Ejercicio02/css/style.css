@@ -3,63 +3,219 @@
 }
 body{
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .container{
     height: 100vh;
     width: 100vw;
-    background-color: red;
-    /* height: 100%; */
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr /*1fr*/;
+    background-image: url(../images/limerick-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/* ESTRUCTURA */
+/* ******************************************* */
+/* ************************* ESTRUCTURA */
+/* ******************************************* */
 .head{
-    border: 1px solid blue;
-    background-color: blue;
     grid-row: 1/2;
 }
 .cuerpo{
-    border: 1px solid blueviolet;
-    background-color: blueviolet;
     grid-row: 2/9;
 }
 .slider{
-    border: 1px solid blue;
     grid-row: 9/12;
 }
 .footer{
-    border: 1px solid blueviolet;
-    background-color: green;
-    grid-row: 12/13;
+    background-color: #333;
+    /* grid-row: 12/13; */
 }
 
-/* HEAD */
+/* ******************************************* */
+/* ************************* HEAD */
+/* ******************************************* */
 .head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* justify-content: center; */
+    align-items: center;
     width: 100%;
 }
 
-.navEmpresa{
-    border: 1px solid yellow;   
-    width: 40%; 
-    background-color: yellow;
-}
 .head ul{
-    display: flex;
-}
-.head ul a{
-    color: white;
-    border: 1px solid white;
-    padd
+    height: 100%;
+    margin: 0;
+    padding: 0 4em;
+    list-style: none;
 
+    display: flex;
+    align-items: center;
+}
+
+.head ul li{
+    height: 100%;
+    padding: 0 .5em;
+
+    display: flex;
+    align-items: center;
+}
+
+.head ul li a{
+    color: #e9eeee;
+    padding: 1em;
+    text-decoration: none;
+}
+.head ul li a:hover{
+    color: #fff;
+}
+
+#logo{
+    width: 12em;
+    margin-right: 2em;
+}
+
+.navEmpresa{
+    height: 100%;
+    width: 40%; 
 }
 
 .navUsuario{
+    height: 100%;
     width: 40%;
-    border: 1px solid yellow;
+}
+
+.navUsuario ul{
+    justify-content: flex-end;
+}
+
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+
+/* ******************************************* */
+/* ************************* BUSCADOR */
+/* ******************************************* */
+.cuerpo{
+    position: relative;
+}
+.buscador{
+    width: 100%;
+    height: 4em;
+    max-width: 700px;
+    background-color: #fff;
+    
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.buscador form{
+    width: 100%;
+}
+.buscador form input{
+    width: 100%;
+    font-size: 1em;
+    padding: .8em;
+    border: transparent;
+    margin-left: 1em;
+}
+
+.buscador form input:focus{
+    outline: none;
+}
+
+.buscador .material-symbols-outlined{
+    font-size: 2em;
+    color: #167b8d;
+    margin-right: .3em;
+}
+
+/* ******************************************* */
+/* ************************* SLIDER */
+/* ******************************************* */
+.slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: .8em;
+    padding: 0 5em;
+}
+
+.noticia{
+    grid-row: 2/3;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1em 1em 0 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    box-shadow: inset 0 -1em 20em rgba(0, 0, 0, 10%) ;
+    
+}
+
+#slider-1{
+    background-image: url(../images/slider-1.jpeg);
+}
+#slider-2{
+    background-image: url(../images/slider-2.jpeg);
+}
+#slider-3{
+    background-image: url(../images/slider-3.jpeg);
+}
+#slider-4{
+    background-image: url(../images/slider-4.jpeg);
+}
+#slider-5{
+    background-image: url(../images/slider-5.jpeg);
+}
+
+.slider h2{
+    width: 100%;
+    margin: 0;
+}
+
+/* ******************************************* */
+/* ************************* FOOTER */
+/* ******************************************* */
+.footer{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4em;
+    padding-left: 1em;
+}
+
+.footer ul{
+    display: flex;
+
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer ul li a{
+    color: #616161;
+    text-decoration: none;
+    padding: 1em;
+}
+.footer ul li a:hover{
+    filter: brightness(150%);
 }
