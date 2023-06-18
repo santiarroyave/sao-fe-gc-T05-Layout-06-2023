@@ -95,6 +95,10 @@ a:hover{
     border: none;
 }
 
+.buscador form input:focus{
+    outline: none;
+}
+
 /* * Botones del buscador */
 .buscador .botonesBuscador{
     /* border: 1px solid red; */
